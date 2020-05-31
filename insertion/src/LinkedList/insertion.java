@@ -1,4 +1,4 @@
-package insertion;
+package LinkedList;
 
 public class insertion {
 	 static class Node { 

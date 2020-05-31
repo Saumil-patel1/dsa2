@@ -1,6 +1,6 @@
-package insertion;
+package LinkedList;
 
-import insertion.insertion.Node;
+
 
 public class deletion {
 	Node head; 	  
@@ -13,10 +13,7 @@ public class deletion {
             data = d; 
             next = null; 
         } 
-    } 
-  
-   
-    void deletingaspecificNode(int vari) 
+    }  void deletingaspecificNode(int vari) 
     { 
                Node temp = head;
                Node prev = null; 
@@ -26,9 +23,8 @@ public class deletion {
             head = temp.next;
             return; 
         } 
-  
-        while (temp != null && temp.data != vari) 
-        { 
+      while (temp != null && temp.data != vari) 
+               { 
             prev = temp; 
             temp = temp.next; 
         }     
