@@ -13,17 +13,17 @@ public class deletion {
             data = d; 
             next = null; 
         } 
-    }  void deletingaspecificNode(int vari) 
-    { 
+    } 
+     void deletingaspecificNode(int variable) {
                Node temp = head;
                Node prev = null; 
   
-             if (temp != null && temp.data == vari) 
+             if (temp != null && temp.data == variable) 
         { 
             head = temp.next;
             return; 
         } 
-      while (temp != null && temp.data != vari) 
+      while (temp != null && temp.data != variable) 
                { 
             prev = temp; 
             temp = temp.next; 
@@ -32,9 +32,9 @@ public class deletion {
 	   return; 
    prev.next = temp.next; 
     } 
-   public void elements(int new_data) 
+   public void elements(int currentdata) 
     { 
-        Node new_node = new Node(new_data); 
+        Node new_node = new Node(currentdata); 
         new_node.next = head; 
         head = new_node; 
     } 
@@ -50,21 +50,21 @@ public class deletion {
   
 
 	 public static void main(String[] args) {
-		 deletion list = new deletion(); 
+		 deletion linkedlist = new deletion(); 
 		  
-	        list.elements(7); 
-	        list.elements(1); 
-	        list.elements(3); 
-	        list.elements(2); 
-	        list.elements(10); 
-	        list.elements(2); 
-	        list.elements(5); 
+	        linkedlist.elements(7); 
+	        linkedlist.elements(1); 
+	        linkedlist.elements(3); 
+	        linkedlist.elements(2); 
+	        linkedlist.elements(10); 
+	        linkedlist.elements(2); 
+	        linkedlist.elements(5); 
 	        System.out.println("before"); 
-	        list.print(); 
-	        list.deletingaspecificNode(1); 
-	        list.deletingaspecificNode(10); 
-	        list.deletingaspecificNode(5); 
+	        linkedlist.print(); 
+	        linkedlist.deletingaspecificNode(1); 
+	        linkedlist.deletingaspecificNode(10); 
+	        linkedlist.deletingaspecificNode(5); 
 	        System.out.println("\nafter"); 
-	        list.print(); 
+	        linkedlist.print(); 
 	    } 
 }
