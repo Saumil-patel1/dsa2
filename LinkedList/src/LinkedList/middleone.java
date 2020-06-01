@@ -49,6 +49,7 @@ public static void main(String[] args) {
 		    head.next.next.next.next.next = newNode(07);  
 
 		    Node result  = midpoint(head);  
+		    System.out.println("middle element is...");
 		    System.out.print( result.data );  
 		} 
 		}  
